@@ -2,26 +2,31 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
 
 .navbar {
-    width: 100vw;
-    height: 80px;
-    background-color: rgb(19, 19, 19);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .links {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-size: 25px;
-  }
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  justify-content: space-between; /* Position elements at opposite ends */
+  align-items: center;
+  padding: 0 20px; /* Add padding to avoid items being too close to the edges */
+  box-sizing: border-box; /* Ensure padding does not push content outside the viewport */
+}
+
+.title {
+  color: white;
+  font-size: 35px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links button {
+  cursor: pointer;
+  padding: 3; /* Ensure no extra padding is causing overflow */
+}
