@@ -1,10 +1,10 @@
-import product1 from '../public/images/tshirt1.webp'
-import product2 from '../public/images/tshirt2.jpg'
-import product3 from '../public/images/tshirt3.webp'
-import product4 from '../public/images/pants1.webp'
-import product5 from '../public/images/pants2.webp'
-import product6 from '../public/images/pants3.webp'
-import product7 from '../public/images/socks.webp'
+import product1 from '../src/assets/tshirt1.webp'
+import product2 from '../src/assets/tshirt2.jpg'
+import product3 from '../src/assets/tshirt3.webp'
+import product4 from '../src/assets/pants1.webp'
+import product5 from '../src/assets/pants2.webp'
+import product6 from '../src/assets/pants3.webp'
+import product7 from '../src/assets/socks.webp'
 
 
 export interface ClothingItem {
