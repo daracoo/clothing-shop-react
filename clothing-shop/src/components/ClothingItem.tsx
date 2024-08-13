@@ -1,17 +1,24 @@
 import React from 'react';
 import { ClothingItem } from '../data';
-
+import './ClothingItem.css'
 interface Props {
   item: ClothingItem;
 }
 
 const ClothingItemComponent: React.FC<Props> = ({ item }) => {
   return (
-    <div>
+    <div className='clothing-item-card'>
       <img src={item.imageUrl} alt={item.name} />
-      <h2>{item.name}</h2>
-      <p>{item.description}</p>
-      <p>${item.price.toFixed(2)}</p>
+      <div className='clothing-item-content'>
+        <h2 className='clothing-item-title'>{item.name}</h2>
+        <p className='clothing-item-description'>{item.description}</p>        
+      </div>
+      <div className='clothing-item-footer'>
+        ${item.price.toFixed(2)}
+      </div>
+      <button className="add-to-cart-btn">
+          Add to Cart
+        </button>
     </div>
   );
 };
